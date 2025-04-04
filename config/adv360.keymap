@@ -28,10 +28,10 @@
             display-name = "Base";
             bindings = <
 &kp DEL    &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &tog 0                                                          &mo 0      &kp N6  &kp N7     &kp N8    &kp N9        &kp N0    &kp MINUS
-&kp TAB    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y   &mo 5                                                           &mo 5      &kp F   &kp G      &kp C     &kp R         &kp L     &kp BSLH
-&kp ESC    &kp A     &kp O      &kp E     &kp U      &kp I   &mo 0   &kp LCTRL  &kp LC(CARET)      &kp LGUI   &kp RCTRL      &mo 0      &kp D   &kp H      &kp T     &kp N         &kp S     &kp ENTER
+&kp TAB    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y   &mo 3                                                           &mo 3      &kp F   &kp G      &kp C     &kp R         &kp L     &kp BSLH
+&kp ESC    &kp A     &kp O      &kp E     &kp U      &kp I   &mo 2   &kp LCTRL  &kp LC(CARET)      &kp LGUI   &kp RCTRL      &mo 2      &kp D   &kp H      &kp T     &kp N         &kp S     &kp ENTER
 &kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K      &kp X                      &kp HOME           &kp PG_UP                            &kp B   &kp M      &kp W     &kp V         &kp Z     &kp RSHFT
-&mo 0      &kp LEFT  &kp RIGHT  &kp LALT  &kp LCTRL          &mo 2   &kp LGUI   &kp LALT           &kp TAB    &kp BACKSPACE  &kp SPACE          &kp RCTRL  &kp RALT  &kp UP_ARROW  &kp DOWN  &kp RCTRL
+&mo 0      &kp LEFT  &kp RIGHT  &kp LALT  &kp LCTRL          &mo 1   &kp LGUI   &kp LALT           &kp TAB    &kp BACKSPACE  &kp SPACE          &kp RCTRL  &kp RALT  &kp UP_ARROW  &kp DOWN  &kp RCTRL
             >;
         };
 
