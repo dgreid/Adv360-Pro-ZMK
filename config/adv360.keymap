@@ -9,16 +9,6 @@
     behaviors {
         #include "macros.dtsi"
       #include "version.dtsi"
-
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -27,11 +17,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp DEL    &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &kp LC(CARET)                                                   &mo 4      &kp N6  &kp N7     &kp N8    &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y   &mo 3                                                           &mo 3      &kp F   &kp G      &kp C     &kp R     &kp L     &kp BSLH
-&kp ESC    &kp A     &kp O      &kp E     &kp U      &kp I   &mo 2   &kp ESC    &kp HOME           &kp PG_UP  &kp ENTER      &mo 2      &kp D   &kp H      &kp T     &kp N     &kp S     &kp ENTER
-&kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K      &kp X                      &kp END            &kp PG_DN                            &kp B   &kp M      &kp W     &kp V     &kp Z     &kp RSHFT
-&kp CAPS   &kp LSHFT &kp LGUI   &kp LALT  &kp LCTRL          &mo 1   &kp TAB    &kp LSHFT          &kp RSHFT  &kp BSPC       &kp SPACE          &kp RCTRL  &kp RALT  &kp RGUI  &kp RSHFT &kp RCTRL
+&kp DEL    &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &mo 4                                                              &mo 4      &kp N6  &kp N7     &kp N8    &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y   &mo 3                                                              &mo 3      &kp F   &kp G      &kp C     &kp R     &kp L     &kp BSLH
+&kp ESC    &kp A     &kp O      &kp E     &kp U      &kp I   &mo 2   &kp LSHFT     &kp LC(CARET)      &kp PG_UP  &kp RSHFT      &mo 2      &kp D   &kp H      &kp T     &kp N     &kp S     &kp ENTER
+&kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K      &kp X                         &kp END            &kp PG_DN                            &kp B   &kp M      &kp W     &kp V     &kp Z     &kp RSHFT
+&kp CAPS   &kp LSHFT &kp LGUI   &kp LALT  &kp LCTRL          &mo 1   &kp TAB       &kp ESC            &kp ENTER  &kp BSPC       &kp SPACE          &kp RCTRL  &kp RALT  &kp RGUI  &kp RSHFT &tog 2
             >;
         };
 
@@ -41,8 +31,8 @@
 &kp DEL    &kp N1      &kp N2      &kp N3         &kp N4        &kp N5        &trans                                                 &trans  &kp N6         &kp N7         &kp N8         &kp N9        &kp N0         &trans
 &kp TAB    &kp LBKT    &kp RBKT    &kp LS(LBRC)   &kp LS(RBRC)  &kp Y         &trans                                                 &trans  &kp LS(EXCL)   &kp LS(PLUS)   &kp LS(POUND)  &kp LS(PIPE)  &kp LS(PRCNT)  &kp LS(TILDE)
 &kp ESC    &kp LS(LT)  &kp LS(GT)  &kp LS(LPAR)   &kp LS(RPAR)  &kp LS(DQT)   &trans  &kp LALT  &trans      &trans         &trans    &trans  &kp BSLH       &kp LS(UNDER)  &kp LS(STAR)   &kp MINUS     &kp EQUAL      &kp GRAVE
-&kp LSHFT  &kp SEMI    &kp Q       &kp LS(TILDE)  &kp LS(DLLR)  &kp LS(DLLR)                    &trans      &trans                           &kp LS(CARET)  &kp FSLH       &kp LS(COLON)  &kp LS(AMPS)  &kp LS(QMARK)  &kp LS(AT)
-&kp LCTRL  &kp LALT    &kp LGUI    &kp LALT       &kp LCTRL                   &trans  &trans    &trans      &trans         &kp BSPC  &mo 2                  &trans         &kp RALT       &kp RGUI      &kp FSLH       &kp RCTRL
+&kp LSHFT  &kp SEMI    &kp Q       &kp LS(TILDE)  &kp LS(DLLR)  &kp LS(DLLR)                    &kp HOME    &trans                           &kp LS(CARET)  &kp FSLH       &kp LS(COLON)  &kp LS(AMPS)  &kp LS(QMARK)  &kp LS(AT)
+&kp LCTRL  &kp LALT    &kp LGUI    &kp LALT       &kp LCTRL                   &trans  &trans    &kp END      &trans         &mo 2     &mo 2                  &trans         &kp RALT       &kp RGUI      &kp FSLH       &kp RCTRL
             >;
         };
 
@@ -63,7 +53,7 @@
 &kp DEL    &kp N1     &kp N2     &kp N3    &kp N4     &kp N5    &kp TAB                                                  &kp RGUI   &kp N6     &kp N7  &kp N8    &kp N9      &kp N0    &kp MINUS
 &kp TAB    &kp SQT    &kp PG_UP  &kp UP    &kp PG_DN  &kp HOME  &none                                                    &none      &kp N0     &kp F7  &kp F8    &kp F9      &kp F12   &kp LS(TILDE)
 &kp ESC    &kp A      &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp COMMA  &kp F4  &kp F5    &kp F6      &kp F11    &kp ENTER
-&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                          &kp HOME      &kp PG_UP                        &kp DOT    &kp N1  &kp F2    &kp F3      &kp F10    &kp FSLH
+&kp LSHFT  &kp SEMI   &kp Q      &kp J     &kp K      &kp X                          &kp HOME      &kp PG_UP                        &kp DOT    &kp F1  &kp F2    &kp F3      &kp F10    &kp FSLH
 &mo 0      &kp GRAVE  &kp CAPS   &kp LEFT  &kp RIGHT            &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp BSPC   &kp SPACE             &kp UP  &kp DOWN  &kp KP_DOT  &kp RBKT  &mo 0
             >;
         };
