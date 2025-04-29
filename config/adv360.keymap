@@ -21,7 +21,7 @@
 &kp TAB    &kp SQT   &kp COMMA  &kp DOT   &kp P      &kp Y   &mo 3                                                              &mo 3      &kp F   &kp G      &kp C     &kp R     &kp L     &kp BSLH
 &kp ESC    &kp A     &kp O      &kp E     &kp U      &kp I   &mo 2   &kp LSHFT     &kp LC(CARET)      &kp PG_UP  &kp RSHFT      &mo 2      &kp D   &kp H      &kp T     &kp N     &kp S     &kp ENTER
 &kp LSHFT  &kp SEMI  &kp Q      &kp J     &kp K      &kp X                         &kp END            &kp PG_DN                            &kp B   &kp M      &kp W     &kp V     &kp Z     &kp RSHFT
-&kp CAPS   &kp LSHFT &kp LGUI   &kp LALT  &kp LCTRL          &mo 1   &kp TAB       &kp ESC            &kp ENTER  &kp BSPC       &kp SPACE          &kp RCTRL  &kp RALT  &kp RGUI  &kp RSHFT &tog 2
+&kp CAPS   &kp LSHFT &kp LGUI   &kp LALT  &kp LCTRL          &mo 1   &mt LSHFT TAB &kp ESC            &kp ENTER  &kp BSPC       &kp SPACE          &kp RCTRL  &kp RALT  &kp RGUI  &kp RSHFT &tog 2
             >;
         };
 
